@@ -1,27 +1,56 @@
+/* Elements */
 body {
-    font-family: Roboto, Harman Retro, sans-serif;
+    font-family: Roboto, Arial, 'Times New Roman';
+    display: flex;
+    flex-direction: column;
 }
 
 button {
     background-color: #3882F6;
     color: #f9faf8;
+    border: 0px;
+    border-radius: 8px;
+    padding: 8px 24px;
 }
+
+.cta button{
+    border: 12px;
+    border-color: #F9FAF8;
+}
+
 
 a {
     text-decoration: none;
     color: #F9FAF8;
 }
 
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    background-color: #F9FAF8;
+}
+
+/* Classes */
+/* Header */
 .header {
     background-color: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
+    display: flex; 
+    flex-direction: column;
+    padding: 0px 120px 120px 120px;
+    gap: 48px;
 }
 
-.hero-primary {
-    font-size: 48px;
-    color: #f9FAF8;
-    font-weight: 900;
+.header-topbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 24px;
 }
 
 .logo {
@@ -30,6 +59,34 @@ a {
     font-weight: 800;
 }
 
+.header-link-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-content-left {
+    width: 600px;
+    flex: 1 0 auto;
+}
+
+.header-content-right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 0 auto;
+}
+
+.hero-primary {
+    font-size: 48px;
+    color: #f9FAF8;
+    font-weight: 900;
+}
+
+/* Body two - quote section */
 .body-two {
     background-color:#E5E7EB;
 }
@@ -45,11 +102,13 @@ a {
     font-weight: 800;
 }
 
+/* Body three - CTA */
 .cta {
     background-color: #3882F6;
     color: #F9FAF8;
 }
 
+/* Footer */
 .footer {
     background-color: #1F2937;
     color: #F9FAF8;
